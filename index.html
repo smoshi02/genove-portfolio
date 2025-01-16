@@ -1,0 +1,36 @@
+mwamwa
+
+1. Initialize local repo -> repo means repository
+git init -> init means Initialize
+git status -> show untracked or uncommitted changes
+
+2. Set username email
+git config --local user.name ""
+git config --local user.email ""
+
+to view current config
+git config --list --local
+
+3.Commit changes
+git add .                       -> stage all uncommitted or new changes. Dot (.) sign
+git add filename                -> stage specific files
+
+git commit -m "Initial commit"
+
+4. Rename branch master -> main
+git branch -m main
+
+5. Connect to remote repository (GitHub)
+Create a new repo on GitHub then copy the repo link
+
+git remote add origin https://github.com/smoshi02/genove-portfolio.git
+
+to show remote origin:
+git remote show origin
+
+6. Push local changes to remote repo
+git push origin main
+
+or set upstream on every push
+
+git push -u origin main
